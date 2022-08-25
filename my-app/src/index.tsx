@@ -9,6 +9,8 @@ import PetList from "./components/organisms/PetList";
 import PetDetails from "./components/organisms/PetDetails";
 import CreatePet from "./components/organisms/CreatePet";
 import UpdatePet from "./components/organisms/UpdatePet";
+import News from "./components/pages//News";
+import Contact from "./components/pages/Contact";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -24,6 +26,9 @@ root.render(
         <Route path="/pets/add" element={<CreatePet />} />
         <Route path="/pets/:id" element={<PetDetails />} />
         <Route path="/pets/edit/:id" element={<UpdatePet />} />
+
+        <Route path="/news" element={<News />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

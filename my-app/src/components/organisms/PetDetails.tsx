@@ -33,14 +33,29 @@ function PersonsDetails() {
   };
 
   return (
+
+    
     <Grid container>
       <Grid item xs={12}>
+      <div className="topnav">
+  <a className="active" href="">=</a>
+  <a href="/">Home</a>
+  <a href="/news">News</a>
+  <a href="/pets">Pets</a>
+  <a href="/contact">Contact</a>
+  <a href="/about">About</a>
+  <a href="/login">Login</a>
+</div>
+
+<div style={{padding:"16px"}}>
+</div>
+
         <ul>
           <Container maxWidth="sm" sx={{ bgcolor: "#876ebc" }}>
-            <h1>Details Page</h1>
+            <h1>Details </h1>
 
             <img
-                  src="https://i.pinimg.com/236x/1d/f4/f0/1df4f0d121b142dbeaf4c236b46216d1.jpg"
+                  src="https://d29fhpw069ctt2.cloudfront.net/icon/image/39024/preview.png"
                   alt=""
                 />
                 <br /> <button onClick={navigateOnePet}>Edit</button>
@@ -52,7 +67,7 @@ function PersonsDetails() {
           Breed: {onePet?.breed} <br />
           Image:  {onePet?.url} <br />
           Gender: {onePet?.gender} <br />
-
+<br />
           
           </p>  
 

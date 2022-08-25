@@ -1,18 +1,36 @@
 import * as React from "react";
 import "./App.css";
 import { useNavigate } from "react-router-dom";
+import './Nav.css';
 
 function App() {
  const navigate = useNavigate();
 
   return <div className="App">
 
+
+
+<div className="topnav">
+  <a className="active" href="">=</a>
+  <a href="/">Home</a>
+  <a href="/news">News</a>
+  <a href="/pets">Pets</a>
+  <a href="/contact">Contact</a>
+  <a href="/about">About</a>
+  <a href="/login">Login</a>
+</div>
+
+<div style={{padding:"16px"}}>
+</div>
+
+
         <ul>
           <div>
-            <h1>Welcome, please login</h1>
-            <img src="https://media.istockphoto.com/vectors/pets-banner-vector-id577310548?k=6&m=577310548&s=170667a&w=0&h=9c2DNIjKfiz7fpTKfYMwwq1B4gLgWUAdP2Tje6XKcy8=" alt="" />
+            <h1 style = {{fontSize: "200px"}}>PetParadise🐾  <img src="https://wallpapercave.com/wp/B1sODrM.jpg" alt="" /></h1>
 
-            <br /> <button  onClick={() => {navigate("/login")}}> Login </button>
+            <p>“Our perfect companions never have fewer than four feet.” <br /> – Colette</p>
+<br />
+
           </div>
         </ul>
       
